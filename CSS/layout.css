@@ -1,0 +1,93 @@
+/* flex  */
+/*.felx-container {
+  display: flex 110;
+}*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Categories forsiden*/
+.grid-container-Categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.grid-container-Categories a {
+  text-decoration: none;
+  padding: 2em;
+
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+h1 {
+  padding-top: 6rem;
+
+  font-size: 4.5em;
+}
+h1 span {
+  display: inline-block;
+  transform: scaleX(-1) translateX(-0.2rem);
+  color: var(--off-color);
+}
+@media screen and (min-width: 700px) {
+  .mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+h2 {
+  line-height: 1;
+  font-size: 3em;
+}
+.fashion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+nav a {
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: auto;
+  text-decoration-color: rgb(121, 121, 122);
+  border-radius: 5px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+.Categories {
+  font-size: 1.5em;
+  line-height: 1.563;
+}
+/* produkt  display: grid;grid-template-rows: sugrid*/
+
+/*produktlisete */
+.productlist main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  gap: 2rem;
+}
+.productlist main h2 {
+  grid-column: 1/-1;
+}
+
+.produktliste-1163 {
+  display: flex;
+  flex-direction: column;
+}
+.productlist article h3 {
+  font-size: 1rem;
+  flex-grow: 3;
+}
