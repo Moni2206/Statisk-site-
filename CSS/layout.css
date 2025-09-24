@@ -2,6 +2,13 @@
 /*.felx-container {
   display: flex 110;
 }*/
+
+body {
+  margin: 2rem;
+  font-weight: 400;
+  line-height: 1.563;
+  padding: 0;
+}
 img {
   display: block;
   max-width: 100%;
@@ -90,4 +97,103 @@ nav a {
 .productlist article h3 {
   font-size: 1rem;
   flex-grow: 3;
+}
+.productlist {
+  font-size: 0.9rem;
+  margin: 45px;
+}
+.mony {
+  display: flex;
+  justify-content: space-between;
+}
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+/*produkt */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #222; /* mørk baggrund */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+section.info {
+  max-width: 50%;
+  padding: 2rem;
+}
+
+section.info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+dl {
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 1rem 0;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+/* Højre boks */
+section.box {
+  background: #98bfd0;
+  color: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 308px;
+  position: absolute;
+  top: 1200px;
+  right: 150px;
+}
+
+section.box h3 {
+  margin-top: 0;
+  font-size: 35px;
+}
+
+.category {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.basket-btn {
+  display: block;
+  width: 100%;
+  background: #444;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.basket-btn:hover {
+  background: #666;
+}
+label {
+  font-size: 20px;
 }
