@@ -1,12 +1,16 @@
 const productContainer = document.querySelector("#productContainer");
 
-fetch("https://kea-alt-del.dk/t7/api/products/1164")
-  .then((response) => response.json())
-  .then((product) => {
-    //console.log(product.articletype);
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 
-    productContainer.innerHTML = ` <figure class="product-image">
-      <img src="/img/1164.webp" alt="" />
+fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
+  .then((res) => res.json())
+
+  //console.log(product.articletype);
+  .then((product) => {
+    productContainer.innerHTML = `
+         <figure class="product-image">
+      <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="produktbillede" />
     </figure>
 
     <section class="box">
