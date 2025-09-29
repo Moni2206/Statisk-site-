@@ -15,13 +15,13 @@ img {
   height: auto;
 }
 /* Categories forsiden*/
-.grid-container-Categories {
+.categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
 
-.grid-container-Categories a {
+.categories a {
   text-decoration: none;
   padding: 2em;
 
