@@ -32,6 +32,8 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     <section class="info">
       <h2>Prroduct Information</h2>
       <dl>
+      <dt>Category</dt>
+        <dd>${product.category} </dd>
         <dt>Gender</dt>
         <dd>${product.gender} </dd>
         <dt>Color</dt>
