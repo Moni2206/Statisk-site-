@@ -73,3 +73,10 @@ select {
   color: rgb(76, 75, 75);
   padding: 1rem;
 }
+#filters button {
+  background: #c9c9f2;
+  color: #242428;
+  padding: 1rem;
+  font-size: medium;
+  border-color: #1fc2f9;
+}
